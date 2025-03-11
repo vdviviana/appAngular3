@@ -1,0 +1,47 @@
+
+
+<section style="width: 95%; background-color: beige; display: flex; flex-direction: column; justify-content: space-around; align-items: center;">
+  
+<h2>Lista de APIs</h2>
+<button (click)="logout()">Cerrar Sesión</button>
+
+<div style="height: auto; width: 80%; margin: 20px 0 30px 0; display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+<!-- Filtro por Categoría -->
+<label for="category" style="margin: 5px;">Categoría:</label>
+<select id="category" [(ngModel)]="selectedCategory" (change)="filterByCategory()" style="margin: 5px;">
+  <option value="">Todas</option>
+  <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+</select>
+<!-- Cambiar Cantidad de Elementos -->
+<label for="items" style="margin: 5px;">Elementos por página:</label>
+<select id="items" (change)="changeItemsPerPage($event)" style="margin: 5px;">
+  <option value="5">5</option>
+  <option value="20">20</option>
+  <option value="50">50</option>
+  <option value="100">100</option>
+  <option value="500">500</option>
+  <option value="1000">1000</option>
+</select>
+</div>
+
+
+<!-- Tabla de Productos -->
+<div style="height: auto; width: 80%; margin: 20px 0 50px 0; display: flex; flex-direction: row; justify-content: space-around; align-items: center;">
+<table>
+  <thead>
+    <tr>
+      <th>Nombre</th>
+      <th>Categoría</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let product of filteredProducts.slice(0, itemsPerPage)" (click)="viewDetails(product)">
+      <td>{{ product.API }}</td>
+      <td>{{ product.Category }}</td>
+      <td>{{ product.Description }}</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+</section>

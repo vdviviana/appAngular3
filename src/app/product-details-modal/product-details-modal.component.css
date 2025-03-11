@@ -1,0 +1,14 @@
+.modal-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .modal-container h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .modal-container button {
+    margin-top: 1rem;
+  }
+  

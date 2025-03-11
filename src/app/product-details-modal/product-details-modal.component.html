@@ -1,0 +1,14 @@
+  <div class="modal-container" style="background-color: aliceblue;">
+    <h2>{{ data.API }}</h2>
+    <p><strong>Categoría:</strong> {{ data.Category }}</p>
+    <p><strong>Descripción:</strong> {{ data.Description }}</p>
+
+
+
+    <div style="width: 100%; display: flex; flex-direction: column; justify-content: space-around; align-items: center;"> 
+      <a [href]="data.Link" target="_blank">Más información </a>
+    <button (click)="close()">Cerrar</button>
+  </div>
+   
+  </div>
+  
