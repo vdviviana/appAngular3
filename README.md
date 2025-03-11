@@ -15,6 +15,11 @@ Boton cierre de sesión
 
 ![image](https://github.com/user-attachments/assets/bc40137f-ffd5-4f75-908b-bfe22180f3ff)
 
+Consulta a API para obtener la información y publicar los datos en la tabla
+
+![image](https://github.com/user-attachments/assets/c97628b3-d636-4277-8f84-428fbda41728)
+
+
 
 
 
