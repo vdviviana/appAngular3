@@ -1,7 +1,8 @@
 # AppAngular3
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.1.5.
+![image](https://github.com/user-attachments/assets/688aaceb-b9a4-4118-926a-754947e76288)
 
+Angular Standalone = true
 
 Formulario de Login validando 6 caracteres como mínimo.
 
